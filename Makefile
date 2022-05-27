@@ -5,7 +5,7 @@ PY_LIB="/usr/local/danwand/lib"
 make:
 	@echo "Install the sw package on the danwand\n"
 	@echo "make install \tinstall all in /user/local/danwand/lib\n"
-	@echo "make battery \tinstall the battery module
+	@echo "make battery \tinstall the battery module"
 
 
 /usr/local/danwand/lib:
