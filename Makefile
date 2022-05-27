@@ -8,6 +8,15 @@ make:
 	@echo "make battery \tinstall the battery module
 
 
-battery:
+/usr/local/danwand/lib:
+	mkdir -p $(PY_LIB)
+
+battery:	/usr/local/danwand/lib
 	cp -r battery $(PY_LIB)
 
+py_requirements:
+	@echo "Installing Python requirements"
+	pip install -r requirements.txt
+
+install: py_requirements battery
+	@echo "All hw lib installed"
